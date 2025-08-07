@@ -1,64 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CareerMapper AI Dashboard</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-</head>
-<body>
-  <div class="blur-bg"></div>
-
-  <header>
-    <h1><i class="fas fa-brain"></i> Careerz</h1>
-    <p>Recognise your flair</p>
-  </header>
-
-  <main class="dashboard">
-    <!-- Profile Section -->
-    <section class="profile-area">
-      <h2>Your Profile</h2>
-      <form id="profileForm">
-        <input type="text" id="username" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <button type="submit"><i class="fas fa-user-plus"></i> Save Profile</button>
-      </form>
-      <div class="profile-box hidden" id="profileBox">
-        <p><strong>Name:</strong> <span id="displayName"></span></p>
-        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
-      </div>
-    </section>
-
-    <!-- Input Form -->
-    <section class="input-area">
-      <h2>Discover Careers</h2>
-      <form id="careerForm">
-        <input type="text" id="skills" placeholder="Your Skills (e.g., coding, leadership)" />
-        <input type="text" id="interests" placeholder="Your Interests (e.g., tech, business)" />
-        <button type="submit"><i class="fas fa-search"></i> Analyze</button>
-      </form>
-    </section>
-
-    <!-- Result Section -->
-    <section class="result-area hidden" id="result">
-      <h2>AI Career Pathway</h2>
-      <div class="career-cards" id="careerCards"></div>
-    </section>
-
-    <!-- Progress Section -->
-    <section class="progress-area">
-      <h2>Skill Progress Snapshot</h2>
-      <div class="progress-card"><h3>Tech Skills</h3><div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div></div>
-      <div class="progress-card"><h3>Creativity</h3><div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div></div>
-      <div class="progress-card"><h3>Communication</h3><div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div></div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Recognise your flair | Careerz © 2025</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careerz AI Career Mapping Tool</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
